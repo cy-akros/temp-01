@@ -89,7 +89,7 @@ export default function TaiwanPage() {
           title="Top Inflow"
           value={summary.topInflow.ticker}
           subtitle={summary.topInflow.name}
-          change={summary.topInflow.flow1M}
+          change={summary.topInflow.flow_1m}
           icon={<ArrowUpRight size={18} />}
           delay={3}
         />
@@ -97,7 +97,7 @@ export default function TaiwanPage() {
           title="Weakest Flow"
           value={summary.topOutflow.ticker}
           subtitle={summary.topOutflow.name}
-          change={summary.topOutflow.flow1M}
+          change={summary.topOutflow.flow_1m}
           icon={<ArrowDownRight size={18} />}
           delay={4}
         />
