@@ -1,0 +1,30 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+
+# env
+.env.local
+.env*.local
+
+# debug
+npm-debug.log*
+
+# misc
+.DS_Store
+*.pem
+nul
+
+# typescript
+next-env.d.ts
+
+# screenshots
+*.png
+
+# playwright
+.playwright-mcp/
+
+# claude
+.claude/
