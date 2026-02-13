@@ -57,8 +57,12 @@ function CustomTooltip({ active, payload, label }: CustomTooltipProps) {
   );
 }
 
+interface ChartDataItem {
+  [key: string]: string | number;
+}
+
 interface AUMChartProps {
-  data: Array<Record<string, unknown>>;
+  data: ChartDataItem[];
   dataKey1: string;
   dataKey2: string;
   name1: string;
@@ -118,7 +122,7 @@ export function AUMAreaChart({
 }
 
 interface FlowBarChartProps {
-  data: Array<Record<string, unknown>>;
+  data: ChartDataItem[];
   dataKey1: string;
   dataKey2: string;
   name1: string;
