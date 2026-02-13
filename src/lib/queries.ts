@@ -1,6 +1,6 @@
 import { createClient } from "@/lib/supabase/client";
 
-export interface ETFRecord {
+export type ETFRecord = {
   id: string;
   ticker: string;
   name: string;
@@ -15,9 +15,9 @@ export interface ETFRecord {
   price_change_1d: number;
   category: string;
   issuer: string;
-}
+};
 
-export interface TimeSeriesRecord {
+export type TimeSeriesRecord = {
   date: string;
   tw_aum: number;
   hk_aum: number;
@@ -25,7 +25,7 @@ export interface TimeSeriesRecord {
   hk_flow: number;
   tw_volume: number;
   hk_volume: number;
-}
+};
 
 export async function fetchETFs(market?: "TW" | "HK") {
   const supabase = createClient();
